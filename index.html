@@ -14,12 +14,12 @@
 </head>
 <main class="d-flex justify-content-center flex-column mt-5 bordeContenedor mx-5">
     <section class="contenedoresPrincipales conteoDisplay p-5 mb-2">
-       <h2 class="fs-1">01:20:36</h2>
+       <h2 class="fs-1" id="display">00:00:00</h2>
     </section>
     <section class="contenedoresPrincipales bordeContenedor p-3">
-        <button class="me-2"><i class="bi bi-play-fill"></i></button>
-        <button class="me-2"><i class="bi bi-arrow-counterclockwise"></i></button>
-        <button><i class="bi bi-pause-fill"></i></button>
+        <button class="me-2" onclick="cronometro.play()" ><i class="bi bi-play-fill"></i></button>
+        <button class="me-2" onclick="cronometro.pausa()" ><i class="bi bi-arrow-counterclockwise"></i></button>
+        <button onclick="cronometro.reset()"><i class="bi bi-pause-fill"></i></button>
     </section>
 </main>
 <body>
